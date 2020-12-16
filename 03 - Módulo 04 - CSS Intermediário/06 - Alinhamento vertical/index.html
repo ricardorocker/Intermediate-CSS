@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Minha primeira página</title>
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+			body{
+				font-size: 1.2rem;
+			}
+			
+			.card{
+				width:	400px;
+				height: 200px;
+				border: 2px solid gray;
+				text-align: center;
+				float: left;
+				position: relative;
+				margin-left: 10px;
+
+			}
+			
+			.c1{
+				line-height:200px;
+			}
+			
+			.c2{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				
+				transform: translate(-50%, -50%);
+			}
+			
+		</style>
+	
+	</head>
+
+	<body>
+	
+		<div class="card">
+		
+			<div class="c1">Line height sendo o mesmo height do card.</div>
+		
+		</div>
+		
+		<div class="card">
+		
+			<div class="c2">position: absolute;
+				top: 50%;
+				left: 50%;				
+				transform: translate(-50%, -50%);
+				<b>Vantagem: Mais do que uma linha.</b></div>
+		
+		</div>
+		
+	</body>
+
+</html>

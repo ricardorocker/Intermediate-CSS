@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Minha primeira página</title>
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+			body{
+				font-size: 1.2rem;
+			}
+			
+			.static{
+				position: static;
+			}
+			
+			/* RELATIVO: "Right, Left, Top, Bottom"; 
+			Configura posição a partir do "STATIC" */
+			.relative {
+				position: relative;
+				left: 30px;
+			}
+			
+			/* FIXO: "Right, Left, Top, Bottom"; 
+			Configura posição a partir da posição "0" da pagina. */
+			.fixed{
+				position: fixed;
+			}
+			
+			/* ABSOLUTO: "Right, Left, Top, Bottom"; 
+			Configura posição a partir do elemento "PAI", nao sendo "STATIC", se nao tiver, será da posição "0" da pagina(body). 
+			Não fixa fixado na pagina.*/
+			.absolute{
+				position: absolute;
+				right: 120px;
+				bottom: 10px;
+			}			
+			
+			.fixed{
+				position: fixed;
+				right: 10px;
+				bottom: 10px;
+			}
+			
+			.relativecenter {
+				position: relative;
+				left: 20px;
+			}
+					
+			.sticky{
+				position: sticky;
+				top: 0;
+				z-index: 1;
+			}
+			
+			.square{
+				width: 100px;
+				height: 100px;
+				margin-top: 10px;
+				display: inline-block;
+				text-align: center;
+			}
+			
+			.rectangle{
+				width: 155px;
+				height: 400px;
+				margin-top: 10px;
+				overflow: auto;
+			}
+			
+			.bg-blue{
+				background-color: blue;
+			}
+			
+			.bg-red{
+				background-color: red;
+			}
+			
+			.bg-gray{
+				background-color: gray;
+			}
+			
+			.bg-yellow{
+				background-color: yellow;
+			}
+			
+			.bg-black{
+				background-color: black;
+			}
+			
+			.bg-white{
+				background-color: white;
+			}
+			
+		</style>
+	
+	</head>
+
+	<body>
+	
+		
+		
+		<div class="static square bg-blue">DIV STATIC</div>
+		
+		<div class="relative square bg-red">
+			DIV RELATIVE
+		</div>
+		
+		<div class="rectangle bg-black">
+		
+			<div class="relativecenter square bg-red">1</div>
+			<div class="relativecenter square bg-white sticky">2 <br>STICKY</div>
+			<div class="relativecenter square bg-red">3</div>
+			<div class="relativecenter square bg-red">4</div>
+			<div class="relativecenter square bg-red">5</div>
+			<div class="relativecenter square bg-red">6</div>
+			<div class="relativecenter square bg-red">7</div>
+		
+		</div>
+		
+		<div class="absolute square bg-yellow">
+			DIV ABSOLUTE BOTTOM - RIGHT
+		</div>
+		
+		<div class="fixed square bg-gray">
+			DIV <br>FIXED BOTTOM - RIGHT
+		</div>
+		
+		<P>TESTE</P>
+		<P>TESTE</P>
+		<P>TESTE</P>
+		<P>TESTE</P>
+		<P>TESTE</P>
+		<P>TESTE</P>
+		<P>TESTE</P>
+		<P>TESTE</P>
+		<P>TESTE</P>
+		<P>TESTE</P>
+		<P>TESTE</P>
+		<P>TESTE</P>
+		<P>TESTE</P>
+		<P>TESTE</P>
+		
+	
+	</body>
+
+</html>
